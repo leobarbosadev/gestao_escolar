@@ -12,7 +12,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="container-cadastro">
             <h2>Cadastro do Aluno</h2>
             <form action="">
                 <label for="nome">Nome Completo:</label>
@@ -36,11 +36,11 @@
                     <input type="number" name="n4" id="nota4">
                 </fieldset>
 
-                <button type="submit" id="btn-adicionar">Adicionar Aluno</button>
+                <button type="button" id="btn-adicionar">Adicionar Aluno</button>
             </form>
         </section>
 
-        <section>
+        <section class="lista-alunos">
             <h2>Lista de Alunos</h2>
             <article>
                 <table>
@@ -52,8 +52,8 @@
                         <th scope="col">Ação</th>
                     </thead>
 
-                    <tbody>
-                        <th>Nenhum aluno cadastrado no momento.</th>
+                    <tbody id="corpo-tabela">
+                        <td>Nenhum aluno cadastrado no momento.</td>
                     </tbody>
                 </table>
             </article>
@@ -64,6 +64,6 @@
         <p>&copy; 2025 Escolinha do Professor Sebastião</p>
     </footer>
 
-    <script href="js/main.js"></script>
+    <script href="src/main.js"></script>
 </body>
 </html>
