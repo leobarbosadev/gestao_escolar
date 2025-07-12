@@ -1,47 +1,110 @@
-*{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- 
-:root{
+
+:root {
     --cor1: #ffffff;
     --cor2: #f2b47e;
     --cor3: #a65729;
     --cor4: #d98859;
-    --cor5: #d93611;
+    --cor5: #b94e24;
     --cor6: #591515;
     --cor7: #cac4c4;
+    --cor8: #ffdcbc;
+    --cor9: #3d1313;
 }
 
-body{
+body {
     font-family: "Roboto", sans-serif;
 }
 
-header{
+header {
     padding: 10px;
     text-align: center;
     color: var(--cor1);
-    background-color: var(--cor2);
+    background-color: var(--cor5);
 }
 
-footer{
+footer {
     padding: 20px;
     text-align: center;
     color: var(--cor1);
-    background-color: var(--cor2);
+    background-color: var(--cor5);
 }
 
-h2{
+h2 {
+    font-size: 30px;
     text-align: center;
+    color: var(--cor9);
 }
 
-main{
+main {
     width: 80%;
-    
     margin: auto;
-    background-color: var(--cor7);
+    box-shadow: 3px 3px 5px var(--cor7);
+    background-color: var(--cor8);
+    box-sizing: content-box;
 }
 
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+    color: var(--cor6);
+    font-size: 20px;
+}
 
+button {
+    margin: 8px;
+    padding: 8px;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor4);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+}
+
+.formulario input {
+    flex-direction: column;
+    color: var(--cor1);
+    background-color: var(--cor4);
+    margin: 3px;
+    padding: 3px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.formulario label {
+
+    font-size: 1.5rem;
+    color: var(--cor6);
+}
+.formulario legend {
+    font-size: 1.2rem;
+    color: var(--cor6);
+}
+
+.formulario fieldset {
+    border: var(--cor1);
+}
