@@ -4,7 +4,6 @@
      box-sizing: border-box;
  }
 
- 
 :root{
     --cor1: #ffffff;
     --cor2: #f2b47e;
@@ -12,7 +11,7 @@
     --cor4: #d98859;
     --cor5: #d93611;
     --cor6: #591515;
-    --cor7: #cac4c4;
+    --cor7: #fafafa;
 }
 
 body{
@@ -34,14 +33,71 @@ footer{
 }
 
 h2{
+    color: var(--cor6);
     text-align: center;
+    margin-bottom: 20px;
 }
 
 main{
-    width: 80%;
-    
+    max-width: 70%;
     margin: auto;
+    padding: 15px;
     background-color: var(--cor7);
 }
 
+legend{
+  margin: 0 auto;
+  font-weight: bold;
+}
 
+input{
+    font-size: 1.3em;
+}
+
+input:focus{
+    outline: 2px solid var(--cor3);
+}
+
+#notas{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 100%;
+    margin: 20px 0;
+}
+
+#notas input, #frequencia{
+    width: 70px;
+}
+
+.linha{
+    padding: 5px;
+    
+}
+
+#nome_completo{
+    width: 400px;
+    margin-right: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th{
+    background-color: var(--cor6);
+    color: var(--cor1);
+}
+
+#teste{
+    overflow-x: auto;
+}
