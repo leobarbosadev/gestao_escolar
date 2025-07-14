@@ -17,41 +17,49 @@
     </header>
 
     <main>
+      <h2>Cadastro do Aluno</h2>
       <section class="container-cadastro">
-        <h2>Cadastro do Aluno</h2>
         <form action="">
-          <label for="nome">Nome Completo:</label>
-          <input type="text" name="nome" id="nome_completo" />
-          <label for="freq">Frequência(%):</label>
-          <input type="number" name="freq" id="frequencia" />
+          <div id="bloco-lado-a-lado">
+            <fieldset id="dados">
+              <legend>Dados escolares</legend>
+            
+              <div id="dados-escolares">
+                  <div class="linha">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" name="nome" id="nome_completo" />
+                  </div>
 
-          <fieldset id="notas">
-            <legend>Notas</legend>
+                  <div class="linha">
+                    <label for="freq">Frequência(%):</label>
+                    <input type="number" name="freq" id="frequencia" />
+                  </div>
+              </div>
+            </fieldset>
 
-            <div class="linha">
-              <label for="n1">1º Bimestre:</label>
-              <input type="number" name="n1" id="nota1" />
-            </div>
-
-            <div class="linha">
-              <label for="n2">2º Bimestre:</label>
-              <input type="number" name="n2" id="nota2" />
-            </div>
-
-            <div class="linha">
-              <label for="n3">3º Bimestre:</label>
-              <input type="number" name="n3" id="nota3" />
-            </div>
-
-            <div class="linha">
-              <label for="n4">4º Bimestre:</label>
-              <input type="number" name="n4" id="nota4" />
-            </div>
-          </fieldset>
-
-          <button type="button" id="btn-adicionar">Adicionar Aluno</button>
+            <fieldset id="notas">
+              <legend>Notas</legend>
+              <div class="linha">
+                <label for="n1">1º Bimestre:</label>
+                <input type="number" name="n1" id="nota1" />
+              </div>
+              <div class="linha">
+                <label for="n2">2º Bimestre:</label>
+                <input type="number" name="n2" id="nota2" />
+              </div>
+              <div class="linha">
+                <label for="n3">3º Bimestre:</label>
+                <input type="number" name="n3" id="nota3" />
+              </div>
+              <div class="linha">
+                <label for="n4">4º Bimestre:</label>
+                <input type="number" name="n4" id="nota4" />
+              </div>
+            </fieldset>
+          </div>
         </form>
       </section>
+      <button type="button" id="btn-adicionar">Adicionar Aluno</button>
 
       <section class="lista-alunos">
         <h2>Lista de Alunos</h2>

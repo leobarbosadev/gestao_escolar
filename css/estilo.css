@@ -102,8 +102,6 @@ input:focus{
     flex-direction: column;
     align-items: center;
     width: 180px;
-    height: 100%;
-    margin: 20px 0; /*Colocar o auto no lugar do 0 para centralizar*/
 }
 
 #notas input, #frequencia{
@@ -118,4 +116,25 @@ input:focus{
 #nome_completo{
     width: 400px;
     margin-right: 20px;
+}
+
+.container-cadastro {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#bloco-lado-a-lado {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: auto;
+}
+
+#dados{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
 }
