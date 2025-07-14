@@ -1,6 +1,4 @@
-export function adicionarAluno(corpoTabela, nome, frequencia, media, situacao, botaoRemover) {
-    limparCorpoTabela();
-
+export function adicionarAluno(corpoTabela, nome, frequencia, media, situacao) {
     const novoAluno = document.createElement('tr');
     corpoTabela.appendChild(novoAluno);
 
@@ -21,7 +19,7 @@ export function adicionarAluno(corpoTabela, nome, frequencia, media, situacao, b
     novoAluno.appendChild(situacaoNovoAluno);
 
     const botaoRemoverAluno = document.createElement('td');
-    botaoRemoverAluno.innerHTML = botaoRemover;
+    botaoRemoverAluno.innerHTML = criarBotaoRemover();
     novoAluno.appendChild(botaoRemoverAluno);
 };
 
@@ -31,6 +29,9 @@ export function criarBotaoRemover() {
     return botaoRemover;
 };
 
-export function limparCorpoTabela(tbody) {
-    tbody.textContent = '';
-}
+export function limparMensagemTabelaVazia(mensagem) {
+    if (mensagem) {
+        mensagem.remove()
+    };
+};
+
