@@ -1,3 +1,8 @@
+import { calcularMedia } from "./modulos/calcularMedia";
+import { situacaoAluno } from "./modulos/situacaoAluno";
+import { adicionarAluno } from "./modulos/adicionarAluno";
+import { criarBotaoRemover } from "./modulos/adicionarAluno";
+import { limparMensagemTabelaVazia } from "./modulos/adicionarAluno";
 import { adicionarEventoBotao } from "./utils/validacao.js";
 import { validar_entrada } from "./utils/validacao.js"
 
@@ -9,7 +14,14 @@ function aoClicarAdicionar() {
   const nota3 = document.getElementById('nota3').value.trim();
   const nota4 = document.getElementById('nota4').value.trim();
 
+  const media = calcularMedia(nota1, nota2, nota3, nota4);
+const situacao = situacaoAluno(frequencia, media);
+
+document.getElementById('btn-adicionar').addEventListener('click', adicionarAluno(corpoTabela, nome, frequencia, media, situacao));
+
+
 validar_entrada(nome, frequencia, nota1, nota2, nota3, nota4);
 }
 
 adicionarEventoBotao('btn-adicionar', aoClicarAdicionar);
+
