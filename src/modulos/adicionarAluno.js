@@ -1,6 +1,7 @@
+import { criarBotaoRemover } from "./removerAluno.js";
+
 export function adicionarAluno(corpoTabela, nome, frequencia, media, situacao) {
-    limparMensagemTabelaVazia();
-    
+
     const novoAluno = document.createElement('tr');
     corpoTabela.appendChild(novoAluno);
 
@@ -24,19 +25,3 @@ export function adicionarAluno(corpoTabela, nome, frequencia, media, situacao) {
     botaoRemoverAluno.innerHTML = criarBotaoRemover();
     novoAluno.appendChild(botaoRemoverAluno);
 };
-
-export function criarBotaoRemover() {
-    const botaoRemover = document.createElement('button');
-    botaoRemover.textContent = 'Remover';
-    botaoRemover.classList.add('btn-remover')
-    return botaoRemover;
-};
-
-export function limparMensagemTabelaVazia() {
-    const mensagem = document.getElementById('mensagem-vazia');
-
-    if (mensagem) {
-        mensagem.remove()
-    };
-};
-

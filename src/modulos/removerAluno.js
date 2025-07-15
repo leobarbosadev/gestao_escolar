@@ -1,3 +1,10 @@
+export function criarBotaoRemover() {
+    const botaoRemover = document.createElement('button');
+    botaoRemover.textContent = 'Remover';
+    botaoRemover.classList.add('btn-remover')
+    return botaoRemover;
+};
+
 export function removerAluno(event, corpoTabela) {
     const botaoClicado = event.target;
     const linha = botaoClicado.closest('tr');
