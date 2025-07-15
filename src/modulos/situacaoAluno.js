@@ -1,5 +1,5 @@
-export function situacaoAluno(frequencia, media){
-    if (frequencia >= 75 && media >= 60) {
+export function situacaoAluno(frequencia, soma) {
+    if (frequencia >= 75 && soma >= 60) {
         return 'Aprovado'
     } else {
         return 'Reprovado'

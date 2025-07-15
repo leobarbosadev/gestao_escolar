@@ -22,6 +22,7 @@ export function adicionarAluno(corpoTabela, nome, frequencia, media, situacao) {
     novoAluno.appendChild(situacaoNovoAluno);
 
     const botaoRemoverAluno = document.createElement('td');
-    botaoRemoverAluno.innerHTML = criarBotaoRemover();
+    const botao = criarBotaoRemover();
+    botaoRemoverAluno.appendChild(botao);
     novoAluno.appendChild(botaoRemoverAluno);
 };

@@ -1,7 +1,8 @@
-import { calcularMedia } from "./modulos/calcularMedia.js";
-import { situacaoAluno } from "./modulos/situacaoAluno.js";
-import { adicionarAluno } from "./modulos/adicionarAluno.js";
-import { removerAluno } from "./modulos/removerAluno.js";
+import { adicionarAluno } from "../modulos/adicionarAluno.js";
+import { calcularMedia } from "../modulos/calcularMedia.js";
+import { removerAluno } from "../modulos/removerAluno.js";
+import { situacaoAluno } from "../modulos/situacaoAluno.js";
+
 
 export function validar_entrada(nome, frequencia, nota1, nota2, nota3, nota4) {
   if (
@@ -36,8 +37,8 @@ export function aoClicarAdicionar() {
   const corpoTabela = document.getElementById('corpo-tabela');
 
   if (validar_entrada(nome, frequencia, nota1, nota2, nota3, nota4)) {
-    const media = calcularMedia(nota1, nota2, nota3, nota4);
-    const situacao = situacaoAluno(frequencia, media);
+    const soma = calcularMedia(nota1, nota2, nota3, nota4);
+    const situacao = situacaoAluno(frequencia, soma);
 
     // Remove a mensagem "Não há alunos" se for a primeira linha
     const mensagem = document.getElementById('mensagem-vazia');
