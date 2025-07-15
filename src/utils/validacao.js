@@ -15,6 +15,11 @@ export function validar_entrada (nome, frequencia, nota1, nota2, nota3, nota4) {
     return true;
 }
 
+export function nomeCompleto (nome) {
+
+    
+}
+
 
 export function adicionarEventoBotao(idBotao, funcao) {
   const botao = document.getElementById(idBotao);
