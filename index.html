@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gestão Escolar</title>
+    <title>GestorEdu</title>
     <link rel="stylesheet" href="css/estilo.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h1>Gestão Escolar</h1>
+        <h1>GestorEdu</h1>
     </header>
 
     <main>
@@ -26,12 +26,12 @@
                         <div id="dados-escolares">
                             <div class="linha">
                                 <label for="nome">Nome Completo:</label>
-                                <input type="text" name="nome" id="nome_completo" maxlength="200">
+                                <input type="text" name="nome" id="nome_completo" maxlength="200" placeholder="Ex.: João das Neves Silva">
                             </div>
 
                             <div class="linha">
                                 <label for="freq">Frequência(%):</label>
-                                <input type="number" name="freq" id="frequencia">
+                                <input type="number" name="freq" id="frequencia" min="0" max="100" placeholder="0 a 100">
                             </div>
                         </div>
                     </fieldset>
@@ -40,19 +40,19 @@
                         <legend>Notas</legend>
                         <div class="linha">
                             <label for="n1">1º Bimestre:</label>
-                            <input type="number" name="n1" id="nota1" />
+                            <input type="number" name="n1" id="nota1" placeholder="0 a 25">
                         </div>
                         <div class="linha">
                             <label for="n2">2º Bimestre:</label>
-                            <input type="number" name="n2" id="nota2" />
+                            <input type="number" name="n2" id="nota2" placeholder="0 a 25">
                         </div>
                         <div class="linha">
                             <label for="n3">3º Bimestre:</label>
-                            <input type="number" name="n3" id="nota3" />
+                            <input type="number" name="n3" id="nota3" placeholder="0 a 25">
                         </div>
                         <div class="linha">
                             <label for="n4">4º Bimestre:</label>
-                            <input type="number" name="n4" id="nota4" />
+                            <input type="number" name="n4" id="nota4" placeholder="0 a 25">
                         </div>
                     </fieldset>
                 </div>
