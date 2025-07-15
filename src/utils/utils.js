@@ -7,11 +7,11 @@ import { situacaoAluno } from "../modulos/situacaoAluno.js";
 export function validar_entrada(nome, frequencia, nota1, nota2, nota3, nota4) {
   if (
     nome === '' ||
-    frequencia === '' ||
-    nota1 === '' ||
-    nota2 === '' ||
-    nota3 === '' ||
-    nota4 === ''
+    frequencia === 0 ||
+    nota1 === 0 ||
+    nota2 === 0 ||
+    nota3 === 0 ||
+    nota4 === 0
   ) {
     alert("Preencha todos os campos para continuar!");
     return false;
@@ -37,8 +37,8 @@ export function aoClicarAdicionar() {
   const corpoTabela = document.getElementById('corpo-tabela');
 
   if (validar_entrada(nome, frequencia, nota1, nota2, nota3, nota4)) {
-    const soma = calcularMedia(nota1, nota2, nota3, nota4);
-    const situacao = situacaoAluno(frequencia, soma);
+    const media = calcularMedia(nota1, nota2, nota3, nota4);
+    const situacao = situacaoAluno(frequencia, media);
 
     // Remove a mensagem "Não há alunos" se for a primeira linha
     const mensagem = document.getElementById('mensagem-vazia');
