@@ -17,10 +17,12 @@ function aoClicarAdicionar() {
   const media = calcularMedia(nota1, nota2, nota3, nota4);
 const situacao = situacaoAluno(frequencia, media);
 
+validar_entrada(nome, frequencia, nota1, nota2, nota3, nota4);
+
 document.getElementById('btn-adicionar').addEventListener('click', adicionarAluno(corpoTabela, nome, frequencia, media, situacao));
 
 
-validar_entrada(nome, frequencia, nota1, nota2, nota3, nota4);
+
 }
 
 adicionarEventoBotao('btn-adicionar', aoClicarAdicionar);
