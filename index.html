@@ -1,119 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gestão Escolar</title>
     <link rel="stylesheet" href="css/estilo.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
 
-  <body>
+<body>
     <header>
-      <h1>Gestão Escolar</h1>
+        <h1>Gestão Escolar</h1>
     </header>
 
     <main>
-      <h2>Cadastro do Aluno</h2>
-      <section class="container-cadastro">
-        <form action="">
-          <div id="bloco-lado-a-lado">
-            <fieldset id="dados">
-              <legend>Dados escolares</legend>
-            
-              <div id="dados-escolares">
-                  <div class="linha">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" name="nome" id="nome_completo" maxlength>
-                  </div>
+        <h2>Cadastro do Aluno</h2>
+        <section class="container-cadastro">
+            <form action="">
+                <div id="bloco-lado-a-lado">
+                    <fieldset id="dados">
+                        <legend>Dados escolares</legend>
 
-                  <div class="linha">
-                    <label for="freq">Frequência(%):</label>
-                    <input type="number" name="freq" id="frequencia">
-                  </div>
-              </div>
-            </fieldset>
+                        <div id="dados-escolares">
+                            <div class="linha">
+                                <label for="nome">Nome Completo:</label>
+                                <input type="text" name="nome" id="nome_completo" maxlength>
+                            </div>
 
-            <fieldset id="notas">
-              <legend>Notas</legend>
-              <div class="linha">
-                <label for="n1">1º Bimestre:</label>
-                <input type="number" name="n1" id="nota1" />
-              </div>
-              <div class="linha">
-                <label for="n2">2º Bimestre:</label>
-                <input type="number" name="n2" id="nota2" />
-              </div>
-              <div class="linha">
-                <label for="n3">3º Bimestre:</label>
-                <input type="number" name="n3" id="nota3" />
-              </div>
-              <div class="linha">
-                <label for="n4">4º Bimestre:</label>
-                <input type="number" name="n4" id="nota4" />
-              </div>
-            </fieldset>
-          </div>
-        </form>
-        <button type="button" id="btn-adicionar">Adicionar Aluno</button>
-      </section>
+                            <div class="linha">
+                                <label for="freq">Frequência(%):</label>
+                                <input type="number" name="freq" id="frequencia">
+                            </div>
+                        </div>
+                    </fieldset>
 
-      <section class="lista-alunos">
-        <h2>Lista de Alunos</h2>
-        <article>
-            <table>
-              <thead>
-                <th scope="col">Nome</th>
-                <th scope="col">Frequência</th>
-                <th scope="col">Média</th>
-                <th scope="col">Situação</th>
-                <th scope="col">Ação</th>
-              </thead>
-              <tbody id="corpo-tabela">
-                <tr>
-                  <td>Colyana Magalhães da Silva Nascimento</td>
-                  <td>100%</td>
-                  <td>10</td>
-                  <td>Aprovado(a)</td>
-                  <td><button type="button" class="limpar">Limpar</button></td>
-                </tr>
+                    <fieldset id="notas">
+                        <legend>Notas</legend>
+                        <div class="linha">
+                            <label for="n1">1º Bimestre:</label>
+                            <input type="number" name="n1" id="nota1" />
+                        </div>
+                        <div class="linha">
+                            <label for="n2">2º Bimestre:</label>
+                            <input type="number" name="n2" id="nota2" />
+                        </div>
+                        <div class="linha">
+                            <label for="n3">3º Bimestre:</label>
+                            <input type="number" name="n3" id="nota3" />
+                        </div>
+                        <div class="linha">
+                            <label for="n4">4º Bimestre:</label>
+                            <input type="number" name="n4" id="nota4" />
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+            <button type="button" id="btn-adicionar">Adicionar Aluno</button>
+        </section>
 
-                <tr>
-                  <td>Leonardo Barbosa e Silva</td>
-                  <td>100%</td>
-                  <td>10</td>
-                  <td>Aprovado(a)</td>
-                  <td><button type="button" class="limpar">Limpar</button></td>
-                </tr>
-
-                <tr>
-                  <td>Gilber Mattos Mendes</td>
-                  <td>100%</td>
-                  <td>10</td>
-                  <td>Aprovado(a)</td>
-                  <td><button type="button" class="limpar">Limpar</button></td>
-                </tr>
-
-                <tr>
-                  <td>Ágata Quadros</td>
-                  <td>100%</td>
-                  <td>10</td>
-                  <td>Aprovado(a)</td>
-                  <td><button type="button" class="limpar">Limpar</button></td>
-                </tr>
-              </tbody>
-            </table>
-        </article>
-      </section>
+        <section class="lista-alunos">
+            <h2>Lista de Alunos</h2>
+            <article>
+                <table>
+                    <thead>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Frequência</th>
+                        <th scope="col">Média</th>
+                        <th scope="col">Situação</th>
+                        <th scope="col">Ação</th>
+                    </thead>
+                    <tbody id="corpo-tabela">
+                        <tr id="mensagem-vazia">
+                            <td colspan="5">Não há alunos cadastrados.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
     </main>
 
     <footer>
-      <p>&copy; 2025 Escolinha do Professor Sebastião</p>
+        <p>&copy; 2025 Escolinha do Professor Sebastião</p>
     </footer>
 
     <script type="module" src="src/main.js"></script>
-  </body>
+</body>
+
 </html>
