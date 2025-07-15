@@ -1,9 +1,9 @@
 export function criarBotaoRemover() {
     const botaoRemover = document.createElement('button');
     botaoRemover.textContent = 'Remover';
-    botaoRemover.classList.add('btn-remover')
+    botaoRemover.classList.add('btn-remover');
     return botaoRemover;
-};
+}
 
 export function removerAluno(event, corpoTabela) {
     const botaoClicado = event.target;
@@ -11,13 +11,13 @@ export function removerAluno(event, corpoTabela) {
     linha.remove();
 
     mensagemTabelaVazia(corpoTabela);
-};
+}
 
 export function mensagemTabelaVazia(corpoTabela) {
     if (corpoTabela.rows.length === 0) {
         const linhaVazia = document.createElement('tr');
-        linhaVazia.id('mensagem-vazia');
+        linhaVazia.id = 'mensagem-vazia'; // Corrigido aqui
         linhaVazia.innerHTML = `<td colspan="5">Não há alunos cadastrados.</td>`;
         corpoTabela.appendChild(linhaVazia);
-    };
-};
+    }
+}

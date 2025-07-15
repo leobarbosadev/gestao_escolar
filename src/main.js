@@ -1,6 +1,10 @@
-import { adicionarEventoBotao } from './utils/utils.js';
-import { aoClicarAdicionar } from './utils/utils.js';
-import { aoClicarRemover } from './utils/utils.js';
+import { adicionarEventoBotao, aoClicarAdicionar, aoClicarRemover } from './utils/utils.js';
+
 
 adicionarEventoBotao('btn-adicionar', aoClicarAdicionar);
-adicionarEventoBotao('botaoRemover', aoClicarRemover);
+
+document.getElementById('corpo-tabela').addEventListener('click', function (event) {
+    if (event.target && event.target.classList.contains('btn-remover')) {
+        aoClicarRemover(event);
+    }
+});
