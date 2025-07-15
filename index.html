@@ -27,12 +27,12 @@
               <div id="dados-escolares">
                   <div class="linha">
                     <label for="nome">Nome Completo:</label>
-                    <input type="text" name="nome" id="nome_completo" />
+                    <input type="text" name="nome" id="nome_completo" maxlength>
                   </div>
 
                   <div class="linha">
                     <label for="freq">Frequência(%):</label>
-                    <input type="number" name="freq" id="frequencia" />
+                    <input type="number" name="freq" id="frequencia">
                   </div>
               </div>
             </fieldset>
@@ -58,13 +58,12 @@
             </fieldset>
           </div>
         </form>
+        <button type="button" id="btn-adicionar">Adicionar Aluno</button>
       </section>
-      <button type="button" id="btn-adicionar">Adicionar Aluno</button>
 
       <section class="lista-alunos">
         <h2>Lista de Alunos</h2>
         <article>
-          <div id="teste">
             <table>
               <thead>
                 <th scope="col">Nome</th>
@@ -79,7 +78,7 @@
                   <td>100%</td>
                   <td>10</td>
                   <td>Aprovado(a)</td>
-                  <td><button type="button">Limpar</button></td>
+                  <td><button type="button" class="limpar">Limpar</button></td>
                 </tr>
 
                 <tr>
@@ -87,7 +86,7 @@
                   <td>100%</td>
                   <td>10</td>
                   <td>Aprovado(a)</td>
-                  <td><button type="button">Limpar</button></td>
+                  <td><button type="button" class="limpar">Limpar</button></td>
                 </tr>
 
                 <tr>
@@ -95,7 +94,7 @@
                   <td>100%</td>
                   <td>10</td>
                   <td>Aprovado(a)</td>
-                  <td><button type="button">Limpar</button></td>
+                  <td><button type="button" class="limpar">Limpar</button></td>
                 </tr>
 
                 <tr>
@@ -103,11 +102,10 @@
                   <td>100%</td>
                   <td>10</td>
                   <td>Aprovado(a)</td>
-                  <td><button type="button">Limpar</button></td>
+                  <td><button type="button" class="limpar">Limpar</button></td>
                 </tr>
               </tbody>
             </table>
-          </div>
         </article>
       </section>
     </main>
