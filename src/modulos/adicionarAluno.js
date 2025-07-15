@@ -5,7 +5,7 @@ export function adicionarAluno(corpoTabela, nome, frequencia, media, situacao) {
     corpoTabela.appendChild(novoAluno);
 
     const nomeNovoAluno = document.createElement('td');
-    nomeNovoAluno.textContent = nome.value;
+    nomeNovoAluno.textContent = nome;
     novoAluno.appendChild(nomeNovoAluno);
 
     const frequenciaNovoAluno = document.createElement('td');

@@ -1,8 +1,8 @@
-import { calcularMedia } from "./modulos/calcularMedia";
-import { situacaoAluno } from "./modulos/situacaoAluno";
-import { adicionarAluno } from "./modulos/adicionarAluno";
-import { criarBotaoRemover } from "./modulos/adicionarAluno";
-import { limparMensagemTabelaVazia } from "./modulos/adicionarAluno";
+import { calcularMedia } from "./modulos/calcularMedia.js";
+import { situacaoAluno } from "./modulos/situacaoAluno.js";
+import { adicionarAluno } from "./modulos/adicionarAluno.js";
+import { criarBotaoRemover } from "./modulos/adicionarAluno.js";
+import { limparMensagemTabelaVazia } from "./modulos/adicionarAluno.js";
 import { adicionarEventoBotao } from "./utils/validacao.js";
 import { removerAluno } from "./modulos/removerAluno.js";
 import { validar_entrada } from "./utils/validacao.js"
