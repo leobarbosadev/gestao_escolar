@@ -27,7 +27,10 @@ function aoClicarAdicionar() {
         return
     };
 
-
+//   if (!nomeCompletoValido(nome)) {
+//     alert("Por favor, digite seu nome completo (nome e sobrenome).");
+//   return; 
+// };
     
   adicionarAluno(corpoTabela, nome, frequencia, media, situacao);
 };
