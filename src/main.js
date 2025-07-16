@@ -19,7 +19,17 @@ function aoClicarAdicionar() {
   const media = calcularMedia(nota1, nota2, nota3, nota4);
   const situacao = situacaoAluno(frequencia, media);
 
-  validar_entrada(nome, frequencia, nota1, nota2, nota3, nota4);
+
+  
+ if (!validar_entrada(corpoTabela, nome, frequencia, media, situacao)) {
+        return
+    };
+
+  if (!nomeCompletoValido(nome)) {
+    alert("Por favor, digite seu nome completo (nome e sobrenome).");
+  return; 
+}
+    
   adicionarAluno(corpoTabela, nome, frequencia, media, situacao);
 };
 
