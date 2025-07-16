@@ -6,7 +6,7 @@ import { limparMensagemTabelaVazia } from "./modulos/adicionarAluno.js";
 import { adicionarEventoBotao } from "./utils/validacao.js";
 import { aoClicarRemover } from "./modulos/removerAluno.js";
 import { validar_entrada } from "./utils/validacao.js"
-
+import { nomeCompletoValido } from "./modulos/validarNome.js"
 
 
 function aoClicarAdicionar() {
@@ -21,16 +21,15 @@ function aoClicarAdicionar() {
   const media = calcularMedia(nota1, nota2, nota3, nota4);
   const situacao = situacaoAluno(frequencia, media);
 
-
+ if (!nomeCompletoValido(nome)) {
+    alert("Por favor, insira nome e sobrenome válidos.");
+    return;
+  }
   
  if (!validar_entrada(corpoTabela, nome, frequencia, media, situacao)) {
         return
     };
 
-//   if (!nomeCompletoValido(nome)) {
-//     alert("Por favor, digite seu nome completo (nome e sobrenome).");
-//   return; 
-// };
     
   adicionarAluno(corpoTabela, nome, frequencia, media, situacao);
 };
