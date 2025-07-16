@@ -4,8 +4,10 @@ import { adicionarAluno } from "./modulos/adicionarAluno.js";
 import { criarBotaoRemover } from "./modulos/adicionarAluno.js";
 import { limparMensagemTabelaVazia } from "./modulos/adicionarAluno.js";
 import { adicionarEventoBotao } from "./utils/validacao.js";
-import { removerAluno } from "./modulos/removerAluno.js";
+import { inicializarRemocao } from "./modulos/removerAluno.js";
 import { validar_entrada } from "./utils/validacao.js"
+
+
 
 function aoClicarAdicionar() {
   const nome = document.getElementById('nome_completo').value.trim();
@@ -25,10 +27,5 @@ function aoClicarAdicionar() {
 
 adicionarEventoBotao('btn-adicionar', aoClicarAdicionar);
 
-function aoClicarRemover(event) {
-    const corpoTabela = document.getElementById('corpo-tabela');
-    
-    removerAluno(event, corpoTabela);
-};
-
-adicionarEventoBotao('botaoRemover', aoClicarRemover);
+const corpoTabela = document.getElementById('corpo-tabela');
+inicializarRemocao(corpoTabela);
