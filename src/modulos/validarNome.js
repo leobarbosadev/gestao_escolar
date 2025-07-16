@@ -6,3 +6,4 @@ export function nomeCompletoValido(nome) {
 
   return partes.length >= 2 && soLetras.test(nome);
 }
+

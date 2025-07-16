@@ -22,14 +22,17 @@ header{
     padding: 10px;
     text-align: center;
     color: var(--cor1);
-    background-color: var(--cor6);
+    
 }
 
 footer{
-    padding: 20px;
+    padding: 10px;
+    height: 230px;
+    width: 100%;
     text-align: center;
     color: var(--cor1);
     background-color: var(--cor6);
+
 }
 
 h2{
