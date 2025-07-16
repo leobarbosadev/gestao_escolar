@@ -4,7 +4,7 @@ import { adicionarAluno } from "./modulos/adicionarAluno.js";
 import { criarBotaoRemover } from "./modulos/adicionarAluno.js";
 import { limparMensagemTabelaVazia } from "./modulos/adicionarAluno.js";
 import { adicionarEventoBotao } from "./utils/validacao.js";
-import { inicializarRemocao } from "./modulos/removerAluno.js";
+import { aoClicarRemover } from "./modulos/removerAluno.js";
 import { validar_entrada } from "./utils/validacao.js"
 
 
@@ -28,4 +28,4 @@ function aoClicarAdicionar() {
 adicionarEventoBotao('btn-adicionar', aoClicarAdicionar);
 
 const corpoTabela = document.getElementById('corpo-tabela');
-inicializarRemocao(corpoTabela);
+aoClicarRemover(corpoTabela);

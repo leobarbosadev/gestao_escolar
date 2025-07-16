@@ -15,7 +15,7 @@ export function mensagemTabelaVazia(corpoTabela) {
     };
 };
 
-export function inicializarRemocao(corpoTabela) {
+export function aoClicarRemover(corpoTabela) {
     corpoTabela.addEventListener('click', (event) => {
         if (event.target.classList.contains('btn-remover')) {
             removerAluno(event, corpoTabela);
