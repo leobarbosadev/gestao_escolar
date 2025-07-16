@@ -13,11 +13,14 @@ export function validar_entrada (nome, frequencia, nota1, nota2, nota3, nota4) {
     };
 
     return true;
-}
-
-export function nomeCompleto (nome) {
 
     
+}
+
+export function nomeCompletoValido (nome) {
+
+  const partes = nome.trim().split(/\s+/);
+  return partes.length >= 2;
 }
 
 
@@ -27,3 +30,6 @@ export function adicionarEventoBotao(idBotao, funcao) {
     botao.addEventListener('click', funcao);
   }
 }
+
+
+

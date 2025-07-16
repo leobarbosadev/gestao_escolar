@@ -1,6 +1,8 @@
 export function adicionarAluno(corpoTabela, nome, frequencia, media, situacao) {
+
     limparMensagemTabelaVazia();
-    
+
+  
     const novoAluno = document.createElement('tr');
     corpoTabela.appendChild(novoAluno);
 
@@ -24,6 +26,8 @@ export function adicionarAluno(corpoTabela, nome, frequencia, media, situacao) {
     const botaoRemoverAluno = criarBotaoRemover();
     celulaRemoverAluno.appendChild(botaoRemoverAluno);
     novoAluno.appendChild(celulaRemoverAluno);
+
+      
 };
 
 export function criarBotaoRemover() {
